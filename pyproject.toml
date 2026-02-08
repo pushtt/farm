@@ -1,0 +1,20 @@
+[project]
+name = "farm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.111.0",
+  "motor==3.4.0",
+  "pydantic-settings==2.2.1",
+  "uvicorn==0.29.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["farm*"]
